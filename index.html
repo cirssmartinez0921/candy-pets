@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>candypets</title>
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -16,7 +16,7 @@
             <p class="top-paragraph d-flex align-items-center"><i class="bi bi-telephone pe-1"></i>+57 3503337395</p>
     
         </div>
-        <div class="redes">
+        <ul class="redes">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">
                     <i class="bi bi-facebook"> <img src="/imagenes/social_facebook_fb_35.png" alt="bi-facebook"></i> 
@@ -32,13 +32,13 @@
                     <i class="bi bi-youtube"> <img src="./imagenes/instagram_black_logo_icon_147122 (2).png" alt="instagram_black_logo_icon_147122"></i>
                 </a>
             </li>
-        </div>
+        </ul>
     </div>
     <div class="logo">
         <div class="container2">
-            <img src="./imagenes/candy pets (1).png" alt="logo-candypets">
+            <img class="logo-candypets" src="./imagenes/candy pets (1).png" alt="logo candypets">
         </div>
-        <div class="carrito-de-compras">
+        <ul class="carrito-de-compras">
             <li class="nav-item-usuario">
                 <a class="navegar" href="#">
                     <img src="./imagenes/Gender_Neutral_User_icon-icons.com_55902.png" alt="usuario">
@@ -54,10 +54,12 @@
                     <img src="./imagenes/magnifier-1_icon-icons.com_56924.png" alt="usuario">
                 </a>
             </li>
-        </div>
+        </ul>
     </div>
-    <nav>
-        <ul class="menu-horizontal">
+    <nav class="nav-menu-horizontal">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle visually-hidden">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu-horizontal menu-list container">
             <li> <a href="inicio">inicio</a></li>
             <li> 
                 <a href="catalogo">catalogo</a>
@@ -119,15 +121,30 @@
         </ul>
     </nav>
     <main>
+        <!-- <section class="container">
+            <div class="slider-wrapper">
+                <img id= "slider-1" src="./imagenes/OIP.jpg" alt="">
+                <img id= "slider-2" src="./imagenes/slider.png" alt="">
+                <img id= "slider-3" src="./imagenes/accesorios-de-mascotas.jpg" alt="">
+            </div>
+            <div class="slider-nav">
+                <a href="#slider-1"></a>
+                <a href="#slider-2"></a>
+                <a href="#slider-3"></a>
+
+            </div>
+        </section> -->
+       
+
         
         <h2>TODAS LAS COLECCIONES</h2>
         <div class="container-items">
             <div class="item">
                 <figure>
-                    <img src="./imagenes/440_181423_Hills___Science_Diet_Puppy_Small_Paws_Dog_1659546188_800x800.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/440_181423_Hills___Science_Diet_Puppy_Small_Paws_Dog_1659546188_800x800.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
-                    <h2>hills science diet puppy small</h2>
+                    <h3>hills science diet puppy small</h3>
                     <p class="precio">$104.400</p>
                     <button>añadir al carrito</button>
 
@@ -135,7 +152,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/AGILITY GOLD GRANDES.png" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/AGILITY GOLD GRANDES.png" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>AGILITY GOLD GRANDES</h3>
@@ -146,7 +163,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/equilibrio 2.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/equilibrio 2.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>equilibrio</h3>
@@ -157,7 +174,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/guaumor.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/guaumor.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>guaumor</h3>
@@ -168,7 +185,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/hills science diet.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/hills science diet.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>hills science diet</h3>
@@ -179,7 +196,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/proplan.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/proplan.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>proplan</h3>
@@ -190,7 +207,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/royal canin.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/royal canin.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>royal cannin puppy</h3>
@@ -201,7 +218,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/true nature.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/true nature.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>true nature</h3>
@@ -212,7 +229,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="./imagenes/kodi.webp" alt="producto">
+                    <img class="imagen-producto" src="./imagenes/kodi.webp" alt="producto">
                 </figure>
                 <div class="info-prduct">
                     <h3>kody</h3>
