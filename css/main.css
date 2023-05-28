@@ -2,10 +2,11 @@ body {
     margin: 0;
 }
 .top-bar {
-    display: block;
+    display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: .8rem 1.2rem;
     background-color: #f17517;
+    align-items: center;
 }
 
 .container {
@@ -15,6 +16,26 @@ body {
 
 .top-redes, .top-contact {
     display: none;
+}
+@media (min-width: 567px){
+    .top-redes, .top-contact {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+    }
+    .top-redes{
+        justify-content: flex-end;
+    }
+    .top-contact{
+        justify-content: flex-start;
+    }
+    .bi-topbar{
+        align-items: center;
+    }
+    .bi.bi-envelope.bi-topbar,
+    .bi.bi-telephone.bi-topbar{
+        margin-right: .4rem;
+    }
 }
 
 img {
@@ -28,6 +49,9 @@ img {
 }
 .logo-candypets {
     width: 6rem;
+}
+.nav-item {
+    list-style: none;
 }
 .nav-item-usuario {
     list-style: none;
@@ -125,6 +149,11 @@ img {
     align-items: center;
     flex-basis: 100vw;
 }
+@media (min-width: 567px){
+    .navbar-group{
+        display: none;
+    }
+ }
 .navbar-redes {
     display: flex;
     list-style: none;
@@ -136,7 +165,7 @@ img {
     color: white;
     font-size: 1.7rem;
 }
-.bi-profile {
+.bi-profile, .bi-topbar {
     font-size: 1.7rem;
     color: black;
 }
