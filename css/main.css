@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 .top-bar {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 10px;
     background-color: #f17517;
@@ -13,11 +13,8 @@ body {
     justify-content: flex-start;
 }
 
-
-.redes {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
+.top-redes, .top-contact {
+    display: none;
 }
 
 img {
@@ -27,15 +24,19 @@ img {
 .logo {
     display: flex;
     justify-content: space-between;
+    margin: .8rem 1.2rem;
 }
 .logo-candypets {
-    width: 9rem;
+    width: 6rem;
 }
 .nav-item-usuario {
     list-style: none;
 }
 .carrito-de-compras {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
 }
 
 /*------------------------*/
@@ -44,8 +45,15 @@ img {
     margin: auto;
     background-color:rgb(15, 207, 41);
     font-size: 20px;
-
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Muestra la lista del menú cuando el checkbox está marcado */
 .menu-toggle:checked ~ .menu-list {
     display: block;
@@ -111,7 +119,27 @@ img {
     padding: 15px 15px 15px 20px;
     text-decoration: none;
 }
-
+.navbar-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100vw;
+}
+.navbar-redes {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .8rem;
+}
+.bi-navbar {
+    color: white;
+    font-size: 1.7rem;
+}
+.bi-profile {
+    font-size: 1.7rem;
+    color: black;
+}
 /*-------------------------*/
 .slider-wrapper{
     position: relative;
@@ -148,8 +176,8 @@ img {
     /* Dispositivos con un ancho mínimo de 576px, como los teléfonos móviles en posición horizontal */
     .container {
         max-width: 540px;                 /* -6.25% */
-        background-color: #EBEBD3;
-        color: #000000;
+       /* background-color: #EBEBD3;
+        color: #000000;*/
     }
 }
   
@@ -157,8 +185,8 @@ img {
     /* Tablets y dispositivos con un ancho mínimo de 768px, como el iPad en posición horizontal */
     .container {
         max-width: 720px;                 /* -6.25% */
-        background-color: #DA4167;
-        color: #FFFFFF;
+        /*background-color: #DA4167;
+        color: #FFFFFF;*/
     }
 }
   
@@ -166,8 +194,8 @@ img {
     /* Portátiles y dispositivos con un ancho mínimo de 992px */
     .container {
         max-width: 960px;                 /* -3.225% */
-        background-color: #F4D35E;
-        color: #000000;
+        /*background-color: #F4D35E;
+        color: #000000;*/
     }
 }
   
@@ -175,7 +203,7 @@ img {
     /* Pantallas de escritorio y dispositivos con un ancho mínimo de 1200px */
     .container {
         max-width: 1140px;                /* -5% */
-        background-color: #F78764;
+       /* background-color: #F78764;*/
     }
 }
   
@@ -183,8 +211,8 @@ img {
     /* Pantallas más grandes y dispositivos con un ancho mínimo de 1400px */
     .container {
         max-width: 1320px;                /* -5.71 */
-        background-color: #083D77;
-        color: #FFFFFF;
+        /*background-color: #083D77;
+        color: #FFFFFF;*/
     }
 }
   
@@ -192,8 +220,8 @@ img {
     /* Pantallas aún más grandes y dispositivos con un ancho mínimo de 1600px */
     .container {
       max-width: 1520px;                /* -5% */
-      background-color: #F78764;
-      color: #000000;
+      /*background-color: #F78764;
+      color: #000000;*/
     }
   }
 
